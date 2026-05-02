@@ -353,30 +353,33 @@ This ensures that every transaction is processed correctly and nothing gets lost
 ## Part 6: GitHub Repository Information
 
 **Repository URL**: 
-
+https://github.com/ahmed-shehab-444/OS-Assignment3-Ahmed-Alissa.git 
 **Number of commits**: 
-
+7 
 **Commit messages**: 
-1. 
-2. 
-3. 
-4. 
+1. Refactor CPU semaphore handling in run method
+2. Update SchedulerSimulationSync.java
+3. Add locking mechanism to waiting time update
+4. Add locking mechanism to increment completed process
+5. Protect context switch counter with a lock
+6. Implement synchronization in SharedResources class
+7. Updated scheduler simulation 
 
 ---
 
 ## Summary
 
 **Total time spent on assignment**: 
-
+ 5hours 30 mins 
 **Key takeaways**: 
-1. 
-2. 
-3. 
+1. Synchronization is essential to prevent race conditions when multiple threads access shared data.
+2. Fine‑grained locking improves concurrency when resources are independent.
+3. Semaphores are useful for controlling access to shared hardware-like resources such as a CPU.
 
 **Most challenging aspect**: 
-
+Explaining lock granularity clearly and ensuring that every shared resource was properly protected without introducing deadlocks.
 **What I'm most proud of**: 
-
+Successfully implementing correct synchronization across counters, logs, and CPU execution — and achieving consistent, stable results across all test runs.
 ---
 
 **End of Documentation**
