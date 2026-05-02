@@ -1,8 +1,8 @@
 # Assignment 3 - Complete Documentation
 
-**Student Name**: [Your Full Name]  
-**Student ID**: [Your ID]  
-**Date Submitted**: [Submission Date]
+**Student Name**: [Ahmed shehab alissa]  
+**Student ID**: [444050140]  
+**Date Submitted**: [02/05/2026]
 
 ---
 
@@ -31,59 +31,63 @@
 
 Document your development process with **minimum 3 entries** showing progression:
 
-### Entry 1 - [Date, Time]
+### Entry 1 - [2026/04/29, 5:00pm]
 **What I implemented**: 
-
+Set up the repository, changed student ID, made first commit.- setup. Testing approach: Compiled and ran the original unsynchronized code to see the race con
+ditions (inconsistent log counts)
 **Challenges encountered**: 
-
+Challenges encountered: None – straightforward 
 **How I solved it**: 
-
+Followed the VS Code cloning steps.
 **Testing approach**: 
-
+Compiled and ran the original unsynchronized code to see the race con
 **Time spent**: 
-
+30 min 
 ---
 
-### Entry 2 - [Date, Time]
+### Entry 2 - [2026/04/29, 7:00pm]
 **What I implemented**: 
-
+ Task 1 – fine-grained ReentrantLocks for the three counters.
 **Challenges encountered**: 
-
+ Understanding why fine-grained locking is better than a single 
 **How I solved it**: 
-
+Read about lock granularity; decided to use three separate locks becau
+se the counters are independent.
 **Testing approach**: 
-
+Ran the program several times; counters now give the same values each run.
 **Time spent**: 
-
+1 hour
 ---
 
-### Entry 3 - [Date, Time]
+### Entry 3 - [2026/04/30, 5:00pm]
 **What I implemented**: 
-
+Task 2 – ReentrantLock for the execution log (ArrayList).
 **Challenges encountered**: 
-
+Initially forgot to unlock in finally block.
 **How I solved it**: 
-
+Initially forgot to unlock in finally block.
 **Testing approach**: 
-
+ made it to lock/unlock inside try finally.
 **Time spent**: 
-
+45mins
 ---
 
-### Entry 4 - [Date, Time]
+### Entry 4 - [2026/04/30, 6:30pm]
 **What I implemented**: 
-
+Task 3 – Semaphore for CPU control (binary semaphore with 1 permit).
 **Challenges encountered**: 
-
+Ensuring semaphore is also added to runToCompletion() method.- 
 **How I solved it**: 
-
+How I solved it: Wrapped both run() and runToCompletion() with acquire()/release() in f
+inally.
 **Testing approach**: 
-
+Set Semaphore(2) temporarily to see concurrency effects; then reverte
+d to 1.
 **Time spent**: 
-
+1 hour 
 ---
 
-### Entry 5 - [Date, Time]
+### Entry 5 - [2026/04/30, 7:30pm]
 **What I implemented**: 
 
 **Challenges encountered**: 
